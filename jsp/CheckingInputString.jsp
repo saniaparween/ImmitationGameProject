@@ -3,10 +3,12 @@
 
 <%@page import="java.io.*,java.util.*, javax.servlet.*,java.util.regex.Matcher,java.util.regex.Pattern"%>
 
-
+<% JSONObject info = (JSONObject)session.getAttribute("info");
+	int currentLevel = (Integer)info.get("level");
+%>
 <%!
 
-    public String StringMatcher(String s)
+    public boolean StringMatcher(String s)
     {
 
 		 String a[][] = {{"people","person", "terrorist"},{"loaded","ready","fire"},{"in","in","in"},{"the","the","the"},{"area","location","venue"}};
@@ -40,41 +42,55 @@
 		}
 		
 		if(flag == 0){
-			return "false";
+			return false;
 			//System.out.println("Sentence mismatched");
 		}
 		else{
-			return "true";
+			return true;
 			//System.out.println("Sentence  matched");
 		}
        }
 	
 
 %>
+<%!	
+	public boolean level2Method(){
+		
+		return true;
+	}
+	
+%>
 
 <%	
 	String inputString = request.getParameter("comment");
-%>	
-
-
-<%	String s1;
-	s1=StringMatcher(inputString);
+	Boolean s1 =null;
+	
+	if(currentLevel==1){
+		s1=StringMatcher(inputString);
+	}
+	
+	if(currentLevel ==2){
+		s1=level2Method();
+	}
 	
 	JSONObject result= new JSONObject();
 	
-	if(s1=="true"){
+	if(s1){
 		
 		result.put("status","0");
-		//result.put("redirectUrl", "/jsp/level1.jsp");
-        out.print(result);
-		out.flush();
+		result.put("redirectUrl", "/jsp/crypto.jsp");
+		info.put("level", currentLevel+1);
+
 	}
 		
-	if(s1=="false"){
+	if(!s1){
 	
 		result.put("status", "-1");
-		out.print(result);
-		out.flush();
+		
 	}	
+	
+	out.print(result);
+	out.print(info);
+	out.flush();
 	
 %>
