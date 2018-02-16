@@ -146,6 +146,8 @@ $(document).ready(function(){
 				if(response.status==0){
 					console.log("Inside success in level 1 when status is 0(correct ans");// a check to see whether if statement is executing or not
 					alert('Correct Answer');
+					var redirectUrl = response.redirectUrl;
+					window.location = redirectUrl;
 				}
 
 				if(response.status == -1){
