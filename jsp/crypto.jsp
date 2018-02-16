@@ -97,7 +97,7 @@ $(document).ready(function(){
 	           data: '',
 	           success: function(data)
 	           {
-	               console.log("Response status info:" + data);
+	               // console.log("Response status info:" + data);
 	               var response = JSON.parse(data);
 				   if(response.hasOwnProperty('status')){
 						if (response.status == -1){
@@ -127,36 +127,36 @@ $(document).ready(function(){
     setInterval(updateStatus, 2000);
 });
 
-	
-	$(document).ready(function(){
-				
-		$("#button").click(function(e) {
-				
-			e.preventDefault();
-			
-			$.ajax({
-				
-				Type:"POST",
-				url:"/jsp/CheckingInputString.jsp",
-				data:{ comment: $("#comment").val()
-					 },	
-				success:function(data){
-					var response = JSON.parse(data);
-					
-					if(response.status==0){
-						console.log("Inside success in level 1 when status is 0(correct ans");// a check to see whether if statement is executing or not 
-						alert('Correct Answer');
-					}
-					
-					if(response.status == -1){
-						console.log("Inside success in level 1 when status is -1(wrong ans)");// a check to see whether if statement is executing or not 
-						alert('InCorrect Answer');
-					}
+
+$(document).ready(function(){
+
+	$("#button").click(function(e) {
+
+		e.preventDefault();
+
+		$.ajax({
+
+			Type:"POST",
+			url:"/jsp/CheckingInputString.jsp",
+			data:{ comment: $("#comment").val()
+				 },
+			success:function(data){
+				var response = JSON.parse(data);
+
+				if(response.status==0){
+					console.log("Inside success in level 1 when status is 0(correct ans");// a check to see whether if statement is executing or not
+					alert('Correct Answer');
 				}
-			});
+
+				if(response.status == -1){
+					console.log("Inside success in level 1 when status is -1(wrong ans)");// a check to see whether if statement is executing or not
+					alert('InCorrect Answer');
+				}
+			}
 		});
 	});
-			
+});
+
 </script>
 
 </body>

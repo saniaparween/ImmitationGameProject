@@ -6,7 +6,7 @@
 
 <%
 	JSONObject userInfo = (JSONObject)session.getAttribute("info");
-	
+
 	if (userInfo == null){
 		JSONObject responseInfo = new JSONObject();
 		responseInfo.put("status", "-1");
@@ -15,12 +15,12 @@
         out.print(responseInfo);
 		out.flush();
         return;
-		 
+
 	}
     if (userInfo != null && (Boolean) userInfo.get("isRegistered")) {
         out.print(userInfo);
         out.flush();
 		return;
     }
-	
+
 %>
