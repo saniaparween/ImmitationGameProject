@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <title>The Imitation Game!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,27 +15,27 @@
   <link href="https://fonts.googleapis.com/css?family=Audiowide|Dhurjati" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|VT323" rel="stylesheet">
 </head>
-    
+
     <body >
-        
+
         <div class="flex-container" style=" padding:1%;">
             <div class="row" style="text-align:center;">
                 <div class="col-xs-12" >
                     <header>
-                        
+
                     <h1 id="head-text" style=" font-size:40px; color :white ;">Team Bits 2 Bytes '18 Presents</h1>
                     <h1 style=" font-size:45px; color : #00c1ef;">The Imitation Game</h1>
-                 
-                       
+
+
                     </header>
-                    
-                    
-                    
+
+
+
                 </div>
             </div>
-                 
+
         </div>
-        
+
 
 
         <div id="main">
@@ -52,7 +52,7 @@
           <div style="margin-bottom: 5%">
           </div>
 
-          <h3 id="example">Ceaser's Cipher</h3>          
+          <h3 id="example">Ceaser's Cipher</h3>
           <h1 id="example-text">Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here</h1>
           <br>
           <br>
@@ -64,7 +64,7 @@
           <br>
 
 
-          <h3 id="example">Example</h3>          
+          <h3 id="example">Example</h3>
           <h1 id="example-text">Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here</h1>
           <br>
           <br>
@@ -74,9 +74,9 @@
           <hr width="99%">
           <br>
 
-          <h3 id="example">Example</h3>          
+          <h3 id="example">Example</h3>
           <h1 id="example-text">Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here</h1>
-          <br> 
+          <br>
           <br>
           <input id="input-box" type="text/css" class="form-control input-lg" placeholder="Input *">
           <br>
@@ -85,16 +85,16 @@
           <br>
 
 
-          <h3 id="example">Example</h3>          
+          <h3 id="example">Example</h3>
           <h1 id="example-text">Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here Write your text here</h1>
-          <br>   
+          <br>
           <br>
           <input id="input-box" type="text/css" class="form-control input-lg" placeholder="Input *">
           <br>
           <input id="input-box" type="text/css" class="form-control input-lg" placeholder="Output">
           <hr width="99%">
           <br>
-         
+
 
 
 
@@ -103,28 +103,28 @@
      </div>
 
 
-    
 
-        
-         <div class="container-fluid" style=" padding:3%;" >     
+
+
+         <div class="container-fluid" style=" padding:3%;" >
     <div class="row" >
         <div class="container-fluid text-center" >
-            <div class="col-xs-2"></div> 
-             <div class="col-xs-8" style="text-align:center;"> 
+            <div class="col-xs-2"></div>
+             <div class="col-xs-8" style="text-align:center;">
                  <h1 style=" font-size:25px; color : #00c1ef;">Need Help?</h1>
             <h1 style=" font-size:25px; color : #00c1ef;">Co-ordinators</h1>
-                            
+
                <p style="padding-top:10px; font-size:20px; color : yellow;"> Sania Parween (Head Coordinator)<br>Ravi Mandalia <br> Wahab Kukaswadia <br> Swapnil Sharma</p>
             </div>
              <div class="col-xs-2"></div>
         </div>
     </div>
 </div>
-  
+
  <script type="text/javascript">
- 
+
 	$(document).ready(function(){
-	
+
 	$("#CeaserSubmit").click(function(e) {
 
 		e.preventDefault();
@@ -138,14 +138,14 @@
 			success:function(data){
 				var response = JSON.parse(data);
 				alert(response);
-				
+
 			}
 		});
-	});	
-	});	
-	 
-     </script>  
-        
+	});
+	});
+
+     </script>
+
     </body>
 
 </html>
