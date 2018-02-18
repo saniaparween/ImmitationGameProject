@@ -56,14 +56,15 @@
             <form id='rc-form' class="form-inline text-center" >
                 <div class="form-group">
                     <label for="agent1" style="padding-top:40px; font-size:30px; color : yellow;">Agent 1 : </label>
-                    <input type="text" name="agentName1" class="form-control" id="email" placeholder="Enter your name">
+                    <input type="text" id="agentName1" name="agentName1" class="form-control" id="email" placeholder="Enter your name">
                 </div>
                 <br>
                 <div class="form-group">
                     <label for="agent2" style="padding-top:40px; font-size:30px; color : yellow;">Agent 2 : </label>
-                    <input type="text" name="agentName2" class="form-control" id="pwd" placeholder="Enter your name">
+                    <input type="text" id="agentName2" name="agentName2" class="form-control" id="pwd" placeholder="Enter your name">
                 </div>
                 <br>
+                <span class='errorSpan' id="nameEmptyError" style="display:none;">Dude/Dudess we need your agent names. You can be Sherlock Holmes &#x1F609;</span>
                 <button type="submit" class="btn btn-primary btn-md center-block" style="margin-top:40px; margin-bottom:40px; ">Roll In!</button>
             </form>
         </div>

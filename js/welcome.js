@@ -1,8 +1,20 @@
 $(document).ready(function() {
 
     //register the team
+
+    function isEmpty(str) {
+        return (!str || 0 === str.length);
+    }
     $("#rc-form").submit(function(e) {
 
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+
+        var agent1 = $("#agentName1").val();
+        var agent2 = $("#agentName2").val();
+        if (isEmpty(agent1) || isEmpty(agent2)) {
+            $('#nameEmptyError').show();
+            return -1;
+        }
         var url = "/jsp/register.jsp"; //register the candidates
 
         $.ajax({
@@ -25,6 +37,5 @@ $(document).ready(function() {
                 alert('Error!  Status = ' + xhr.status);
             }
         });
-        e.preventDefault(); // avoid to execute the actual submit of the form.
     });
 });
