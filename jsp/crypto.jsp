@@ -39,5 +39,6 @@
 <%-- Include the correct level file; level to be picked from the info object which is stored in session --%>
 <jsp:include page="${levelJspFileName}"></jsp:include>
 
+<script src="../js/crypto.js"></script>
 <%-- Include footer file --%>
 <%@include file="/jsp/footer.jsp" %>
