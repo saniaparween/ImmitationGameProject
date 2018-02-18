@@ -1,19 +1,20 @@
-$(document).ready(function(){
-	$("#CeaserSubmit").click(function(e) {
+$(document).ready(function() {
+    $("#CeaserSubmit").click(function(e) {
 
-		e.preventDefault();
+        e.preventDefault();
 
-		$.ajax({
+        $.ajax({
 
-			Type:"POST",
-			url:"/jsp/CipherToolsAnswer.jsp",
-			data:{ CeaserInput: $("#CeaserInput").val()
-				 },
-			success:function(data){
-				var response = JSON.parse(data);
-				alert(response);
+            Type: "POST",
+            url: "/jsp/CipherToolsAnswer.jsp",
+            data: {
+                CeaserInput: $("#CeaserInput").val()
+            },
+            success: function(data) {
+                var response = JSON.parse(data);
+                alert(response);
 
-			}
-		});
-	});
+            }
+        });
+    });
 });
