@@ -1,0 +1,58 @@
+
+
+body{
+    
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    /*background-position: 50% 0px;*/
+    background-attachment: fixed;
+}
+
+
+
+@font-face {
+    font-family: myFirstFont;
+        src: url(../ttf/LOVE-BOX-demo.ttf);
+    }
+
+#head-text{
+    font-family: 'Dhurjati', sans-serif;
+}
+@font-face {
+    
+    font-family: myFirstFont1;
+    src: url(../ttf/ImmensedecaY.ttf);
+    }
+
+h1 {
+    font-family: myFirstFont;
+}
+
+#heading1,#heading2,#heading3{
+    
+    font-family: myFirstFont1;
+    
+}
+
+
+
+
+#input-box{
+    border-radius: 0;
+}
+
+#example-text{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    color: #16f934;
+}
+
+
+#example{
+    font-family: myFirstFont;
+    color: blue;
+}

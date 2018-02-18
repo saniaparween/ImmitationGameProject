@@ -128,7 +128,6 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
 
 	$("#button").click(function(e) {
 
@@ -157,7 +156,7 @@ $(document).ready(function(){
 			}
 		});
 	});
-});
+
 
 </script>
 

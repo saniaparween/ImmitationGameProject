@@ -41,7 +41,7 @@
 		}
 
 		if (flag == 0) {
-			return true;
+			return false;
 			//System.out.println("Sentence mismatched");
 		}
 		else{
