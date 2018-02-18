@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/font.css">
   <link rel="stylesheet" type="text/css" href="../css/timer.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <link rel="stylesheet" type="text/css" href="/css/cipherToolsStyle.css">
+  <link rel="stylesheet" type="text/css" href="../css/cipherToolsStyle.css">
 
   <script src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
