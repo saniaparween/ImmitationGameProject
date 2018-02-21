@@ -34,7 +34,7 @@ function initializeClock(id, endtime) {
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
+    var timeinterval = setInterval(updateClock, 2000);
 }
 
 $(document).ready(function() {
@@ -52,10 +52,9 @@ $(document).ready(function() {
                 if (response.hasOwnProperty('status')) {
                     if (response.status == -1) {
                         var redirectUrl = response.redirectUrl;
-                        var delay = 1000;
-                        setTimeout(function() {
-                            window.location = redirectUrl;
-                        }, delay);
+                        var message = response.message;
+                        alert(message);
+                        window.location = redirectUrl;
                         return false;
                     }
                 }
@@ -76,7 +75,7 @@ $(document).ready(function() {
     }
 
     updateStatus();
-    setInterval(updateStatus, 2000);
+    setInterval(updateStatus, 500);
 
     $("#button").click(function(e) {
 
