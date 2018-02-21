@@ -72,7 +72,7 @@
 
 	if (isCorrectAnswer) {
 		result.put("status","0");
-		result.put("redirectUrl", "/jsp/crypto.jsp");
+		result.put("redirectUrl", "/jsp/result.jsp"); //SANIA - do change after first day and change this to crypto.jsp
 		info.put("level", currentLevel+1);
 	} else {
 		result.put("status", "-1"); //
