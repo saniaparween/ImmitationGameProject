@@ -41,7 +41,7 @@
 <div class="container-fluid" style="background-color:black; padding:10%;">
 	<div class="row">
         <div class="col-xs-4"></div>
-            <div class="col-xs-4">    
+            <div class="col-xs-4">
                 <h1 id="heading2" style=" font-size:30px; text-align:center; color :#00c1ef;">Get a tour of the crypto Tools !</h1>
                 <a href="../jsp/cipherTools.jsp"><img class="img-responsive" src="../images/start2.jpg"></a>
             </div>

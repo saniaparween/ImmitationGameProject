@@ -6,7 +6,6 @@
 <%-- Include header file --%>
 <%@include file="/jsp/header.jsp" %>
 
-
 <div class="container-fluid" id="welcomeintro" >
     <div class="row" style="padding-top:30px;   text-align:center;">
         <div class="container">
@@ -19,36 +18,26 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid" id="desc">
- <div class="container" >
-	<div class="row">
-		
-		 <div class="col-xs-12" style="padding-top:10px;">
-		 
-			<h1 style=" font-size:30px; color : #00c1ef;">A little background into the event</h1>
-			
-			<p style="padding-top:35px; font-size:20px; color : yellow;">The RAW of India while in their continuous monitoring of activities and events have come across something  which appears to be dubious and suspicious. The senior RAW analyst Mr. Shiv Prasad Raman believes the activity has some  terror roots and a quick analysis needs to be made into the situation. While there are other agents working out there collecting information, your task is smartly analyse and pass on the valuable information to your higher authorities.
-			
-			
-			<div class="container">
+    <div class="container" >
+        <div class="row">
             <div class="col-xs-12" style="padding-top:10px;">
-                <h1 style="padding-top:40px; font-size:25px; color : #00c1ef;"><strong>Two events have occured so far</strong></h1>
-                <ol class="list-group" style="padding-top:40px; ">
-                    <li class="list-group-item" style="color:white; background-color:black; font-size:20px;">A connection was compromised and the conversation between the two IP Addresses has been traced. </li>
-                    <li class="list-group-item" style="color:white; background-color:black; font-size:20px;">Our one Indian Spy has passed on some other valuable information.</li>
-                </ol>
+                <h1 style=" font-size:30px; color : #00c1ef;">A little background into the event</h1>
+                <p style="padding-top:35px; font-size:20px; color : yellow;">The RAW of India while in their continuous monitoring of activities and events have come across something  which appears to be dubious and suspicious. The senior RAW analyst Mr. Shiv Prasad Raman believes the activity has some  terror roots and a quick analysis needs to be made into the situation. While there are other agents working out there collecting information, your task is smartly analyse and pass on the valuable information to your higher authorities.
+                <div class="container">
+                    <div class="col-xs-12" style="padding-top:10px;">
+                        <h1 style="padding-top:40px; font-size:25px; color : #00c1ef;"><strong>Two events have occured so far</strong></h1>
+                        <ol class="list-group" style="padding-top:40px; ">
+                            <li class="list-group-item" style="color:white; background-color:black; font-size:20px;">A connection was compromised and the conversation between the two IP Addresses has been traced. </li>
+                            <li class="list-group-item" style="color:white; background-color:black; font-size:20px;">Our one Indian Spy has passed on some other valuable information.</li>
+                        </ol>
+                    </div>
+                </div>
+                </p>
             </div>
         </div>
-			</p>
-		 
-			
-			
-		</div>
-		 </div>
-	</div>
+    </div>
 </div>
-
 <div class="container-fluid" id="welcomeparallax1"></div>
 <div class="container-fluid" id="rules">
     <div class="row" style="padding-top:30px; padding:bottom:30px;  text-align:center;">
@@ -63,18 +52,13 @@
                     <li class="list-group-item" style="color:#90f6ff; background-color:black; font-size:20px;">In case of a tie, the tie will be broken by the respective time taken by the individual team to correctly solve the problems.</li>
                     <li class="list-group-item" style="color:#fff620; background-color:black; font-size:20px;">No electronic gadgets except the ones provided by the coordinators such as desktops will be allowed.</li>
                     <li class="list-group-item" style="color:#90f6ff; background-color:black; font-size:20px;">In case of any discrepancies, the decision of the coordinators will be final.</li>
-					<li class="list-group-item" style="color:#fff620; background-color:black; font-size:20px;">The coordinators of the event possess the rights to change and modify the rules of the event at any time.</li></li></li>
-				</ul>
+                    <li class="list-group-item" style="color:#fff620; background-color:black; font-size:20px;">The coordinators of the event possess the rights to change and modify the rules of the event at any time.</li>
+                    </li></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
 <!--<div class="container-fluid" id="parallax2"></div> -->
 <div class="container-fluid" id="reg" >
     <div class="row">
@@ -102,17 +86,14 @@
     </div>
 </div>
 <div class="container-fluid" id="welcomeparallax3"></div>
-
-
 <script src="../js/welcome.js"></script>
-
 <div class="container-fluid" style="background-color:black; padding:10%;">
-	<div class="row">
+    <div class="row">
         <div class="col-xs-4"></div>
-            <div class="col-xs-4">    
-                <h1 id="heading2" style=" font-size:30px; text-align:center; color :#00c1ef;">Get a tour of the crypto Tools !</h1>
-                <a href="../jsp/cipherTools.jsp"><img class="img-responsive" src="../images/start2.jpg"></a>
-            </div>
+        <div class="col-xs-4">
+            <h1 id="heading2" style=" font-size:30px; text-align:center; color :#00c1ef;">Get a tour of the crypto Tools !</h1>
+            <a href="../jsp/cipherTools.jsp"><img class="img-responsive" src="../images/start2.jpg"></a>
+        </div>
         <div class="col-xs-4"></div>
     </div>
 </div>

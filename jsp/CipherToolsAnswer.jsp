@@ -8,7 +8,7 @@
 public  StringBuffer encrypt(String text, int s)
     {
         StringBuffer result= new StringBuffer();
- 
+
         for (int i=0; i<text.length(); i++)
         {
             if (Character.isUpperCase(text.charAt(i)))
@@ -25,29 +25,29 @@ public  StringBuffer encrypt(String text, int s)
             }
         }
         return result;
-	}	
+	}
 
 %>
 
 
 
-<%	
+<%
 	String cipherId = request.getParameter("");
 	String encryptedText=request.getParameter("ceaserInput");
 	int ceaserKey=Integer.parseInt(request.getParameter("ceaserKey"));
-%>	
+%>
 
-<%	
+<%
 	StringBuffer decryptedText;
 	decryptedText= encrypt(encryptedText,ceaserKey);
-	
-	
+
+
 	JSONObject result = new JSONObject();
 	result.put("decryptedCeaserCipher",decryptedText.toString()); //
-	
+
 
 	out.print(result);
-	
+
 	out.flush();
 
 %>

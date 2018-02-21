@@ -26,13 +26,13 @@
             <header>
                 <h1 id="head-text" style=" font-size:35px; color :white ;">Team Bits 2 Bytes '18 Presents</h1>
                 <h1 style=" font-size:30px; color : #00c1ef;">The Imitation Game</h1>
-				
+
 				<h1 id="head-text"" style=" font-size:25px; color :white ;">SPONSORED BY - </h1>
 				<img class="img-responsive" style="margin: 0 auto; width:13%;" src="../images/g4glogo.png">
-				
+
             </header>
-			
-			
+
+
         </div>
     </div>
 </div>
