@@ -34,7 +34,7 @@ function initializeClock(id, endtime) {
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 2000);
+    var timeinterval = setInterval(updateClock, 4000);
 }
 
 $(document).ready(function() {
@@ -75,7 +75,7 @@ $(document).ready(function() {
     }
 
     updateStatus();
-    setInterval(updateStatus, 500);
+    setInterval(updateStatus, 1000);
 
     $("#button").click(function(e) {
 
