@@ -101,7 +101,7 @@ $(document).ready(function() {
 
                 if (response.status == -1) {
                     console.log("Inside success in level 1 when status is -1(wrong ans)"); // a check to see whether if statement is executing or not
-                    alert('InCorrect Answer');
+                    alert('Incorrect Answer \nPlease try again. Good Luck!');
                 }
             }
         });

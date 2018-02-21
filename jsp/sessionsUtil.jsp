@@ -24,7 +24,7 @@
    
     if (currentTime > endTime) {
         //send him to his result page
-        response.sendRedirect("/jsp/results.jsp");
+        response.sendRedirect("/jsp/result.jsp");
     }
     // printLog("INFO:" + info.toString());
 
