@@ -18,7 +18,7 @@
 
 	String agentName1 = (String)info.get("agentName1");
 	String agentName2 = (String)info.get("agentName2");
-	String message =  "You did great. You are qualified the first level. We are thinking that we should screen you further. Things are going to get tougher tomorrow. Be prepared AGENTS !!. Good Luck.";
+	String message =  "You did great. You have qualified the first level. We are thinking that we should screen you further. Things are going to get tougher tomorrow. Be prepared AGENTS !!. Good Luck.";
 	String missionTitle = "MISSION ACCOMPLISHED";
 	int level = (Integer)info.get("level");
 	if (level == 1) {
