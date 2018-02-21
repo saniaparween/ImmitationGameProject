@@ -34,7 +34,7 @@ function initializeClock(id, endtime) {
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 4000);
+    var timeinterval = setInterval(updateClock, 5000);
 }
 
 $(document).ready(function() {
