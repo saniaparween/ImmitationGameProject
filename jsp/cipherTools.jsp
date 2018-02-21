@@ -54,7 +54,7 @@
 				
 			<span class='errorSpan' id="inputEmptyError" style="display:none;">Please enter the correct values &#x1F609;</span>
 				<div style="">
-					<span style="color:yellow" id='decryptedCeaserCipher' ></span>
+					<span id='decryptedCeaserCipher' ></span>
 				</div>
 			<hr width="99%">
 </form>		
