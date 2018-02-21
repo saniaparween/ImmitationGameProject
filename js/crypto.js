@@ -85,7 +85,7 @@ $(document).ready(function() {
         $.ajax({
 
             Type: "POST",
-            url: "/jsp/CheckingInputString.jsp",
+            url: "/jsp/checkingInputString.jsp",
             data: {
                 comment: $("#comment").val()
             },
