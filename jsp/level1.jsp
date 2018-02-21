@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <h1 style="padding-top:20px; font-size:25px; color: yellow; text-align:center; ">Message by the Spy!</h1>
-                <h3 style=" font-size:25px; color: white; text-align:center; "><b>cookies loaded in the partition CCU one sector affected fqdyuzmxAzq</b></h3>
+                <h3 style=" font-size:25px; color: white; text-align:center; "><b>cookies loaded in the partition CCU one sector affected fqdyuzmxfia</b></h3><br><br><br>
                 <br><br><br>
             </div>
         </div>
@@ -62,7 +62,12 @@
                 <label for="comment" style="color:white; font-size:20px;">Intercept and decipher the meaning of the codewords used by the terrorists. <br> Input the message passed by the spy in a language understood by the commoners.</label>
                 <input type="text" name="comment" id="comment"style="width:55%;margin-top:50px;" class="input-lg">
             </div>
-            <a href="www.google.com"><img class="img-responsive" name="submitButton "id="button" src="../images/lockbutton.jpg" style="height:150px; margin:auto; padding-top:50px;"></a>
+            <a><img class="img-responsive" name="submitButton "id="button" src="../images/lockbutton.jpg" style="height:150px; margin:auto; padding-top:50px;"></a>
+            <div class="text-center">
+                <h3 style="color:yellow">
+                    <b>NOTE: </b>Please input the texts all in lower case. Mind the case
+                </h3>
+            </div>
         </div>
     </div>
 </div>

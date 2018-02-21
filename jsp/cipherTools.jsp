@@ -46,7 +46,7 @@
 	<input type="submit" id="ceaserSubmit">
 	<span class='errorSpan' id="inputEmptyError" style="display:none;">Please enter the correct values &#x1F609;</span>
 	<div style="">
-		<span id='decryptedCeaserCipher' ></span>
+		<span style="color:yellow" id='decryptedCeaserCipher'></span>
 	</div>
 	<hr width="99%">
 </form>
