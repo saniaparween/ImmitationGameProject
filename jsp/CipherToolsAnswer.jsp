@@ -3,7 +3,6 @@
 <%@page import="java.io.*,java.util.*, javax.servlet.*"%>
 <%@page import="org.json.simple.JSONObject"%>
 
-<html>
 
 <%!
 public  StringBuffer encrypt(String text, int s)
@@ -32,14 +31,19 @@ public  StringBuffer encrypt(String text, int s)
 
 
 
-<%
-	String encryptedText=request.getParameter("CeaserInput");
-	//int z=Integer.parseInt(request.getParameter("key"));
-	StringBuffer decryptedText;
-	decryptedText= encrypt(encryptedText,4);
+<%	
+	String cipherId = request.getParameter("");
+	String encryptedText=request.getParameter("ceaserInput");
+	int ceaserKey=Integer.parseInt(request.getParameter("ceaserKey"));
+%>	
 
+<%	
+	StringBuffer decryptedText;
+	decryptedText= encrypt(encryptedText,ceaserKey);
+	
+	
 	JSONObject result = new JSONObject();
-	result.put("decryptedText",decryptedText);
+	result.put("decryptedCeaserCipher",decryptedText.toString()); //
 	
 
 	out.print(result);
@@ -47,5 +51,3 @@ public  StringBuffer encrypt(String text, int s)
 	out.flush();
 
 %>
-
-</html>

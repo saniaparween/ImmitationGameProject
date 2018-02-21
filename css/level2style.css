@@ -1,5 +1,5 @@
-#level1intro{
-    background: url('../images/823520.jpg');
+#intro{
+    background: url('../images/redbg7.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -7,12 +7,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 150px;
+    padding-bottom: 350px;
      
 }
 
-#level1intro1{
-    background: url('../images/convo.jpg');
+#intro1{
+    background: url('../images/redbg2.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -28,15 +28,33 @@
     
 }
 
-
-
-
-
-
-
-#level1parallax3{
+#code{
+    background: url('../images/taxicode.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 750px;
+    background-size: cover;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#00c1ef;
     
-     background: url('../images/par5.jpg');
+}
+
+
+
+
+
+
+
+
+#parallax3{
+    
+     background: url('../images/redbg1.jpg');
     background-attachment: fixed;
     padding: 20%;
      background-repeat: no-repeat;
@@ -49,9 +67,9 @@
     
 }
 
-#level1parallax4{
+#parallax4{
     
-     background: url('../images/lock.jpg');
+     background: url('../images/rebg4.jpg');
     background-attachment: fixed;
     padding: 20%;
      background-repeat: no-repeat;
@@ -66,7 +84,7 @@
 
 
 
-#level1conver{
+#conver{
     background: url('../images/dragon.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -83,7 +101,7 @@
 }
 
 
-#level1terminal{
+#terminal{
     
     
     background: url('../images/dragon.jpg');
@@ -102,38 +120,3 @@
     
 }
 
-@font-face {
-    font-family: myFirstFont;
-        src: url(../ttf/LOVE-BOX-demo.ttf);
-    }
-
-#head-text{
-    font-family: 'Dhurjati', sans-serif;
-}
-@font-face {
-    
-    font-family: myFirstFont1;
-    src: url(../ttf/ImmensedecaY.ttf);
-    }
-
-h1 {
-    font-family: myFirstFont;
-}
-
-#heading1,#heading2,#heading3{
-    
-    font-family: myFirstFont1;
-    
-}
-
-p,label{
-    font-family: 'Audiowide', cursive;
-    
-}
-
-#level1convo{
-    
-   font-family: 'Audiowide', cursive;
-    font-size: 13px;
-    color: white;
-}

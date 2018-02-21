@@ -1,19 +1,40 @@
 $(document).ready(function() {
-    $("#CeaserSubmit").click(function(e) {
+	
+	
+    function isEmpty(str) {
+        return (!str || 0 === str.length);
+    }
+	 
+	
+    $("#ceaserCipher").submit(function(e) {
+		
+		 e.preventDefault();
+		 
+		var ceaserInput = $("#ceaserInput").val();
+		var ceaserKey = $("#ceaserKey").val();
 
-        e.preventDefault();
+		
+		if (isEmpty(ceaserInput) || isEmpty(ceaserKey)) {
+            $('#inputEmptyError').show();
+            return -1;
+        }
 
+       
         $.ajax({
 
             Type: "POST",
             url: "/jsp/CipherToolsAnswer.jsp",
-            data: {
-                CeaserInput: $("#CeaserInput").val()
-            },
-            success: function(data) {
+            data: 
+                $("#ceaserCipher").serialize(),
+				
+         
+            success: function(data)	{
+				console.log("Inside success in cipher.js");
                 var response = JSON.parse(data);
-                alert(response);
-
+				
+				var decryptedCeaserCipher = response.decryptedCeaserCipher;
+				$("#decryptedCeaserCipher").text("Decrypted Text : " + decryptedCeaserCipher);
+              
             }
         });
     });

@@ -10,8 +10,8 @@
 <%!
     public boolean stringMatcher(String s) {
 
-		String a[][] = {{"people","person", "terrorist"},{"loaded","ready","fire"},{"in","in","in"},{"the","the","the"},{"area","location","venue"}};
-		String check[] = new String [10];
+		String a[][] = {{"people","person", "terrorist","persons","terrorists","men","bomber","assassin","hijacker","assassins"},{"infiltrate","entered","invaded","deployed","penetrated","invade","intrude","infiltrated","started","penetrate"},{"in","in","in","in","in","in","in","in","in","in"},{"the","the","the","the","the","the","the","the","the","the"},{"area","location","venue","locality","place","spot","site","address","city","division"},{"calcutta","calcutta","calcutta","calcutta","calcutta","calcutta","calcutta","calcutta","calcutta","calcutta"},{"one","one","one","one","one","one","one","one","one","one"},{"sector","area","division","place","airport","venue","location","spot","sector","area"},{"affected","affected","affected","affected","affected","affected","affected","affected","affected","affected"},{"terminalOne","terminalOne","terminalOne","terminalOne","terminalOne","terminalOne","terminalOne","terminalOne","terminalOne","terminalOne"}};
+		String check[] = new String [30];
 
         Pattern p = Pattern.compile("[a-zA-Z]+");
         Matcher m1 = p.matcher(s);
@@ -22,16 +22,16 @@
 		}
 
 		for(int i=0;i<k;i++){
-			System.out.println(check[i]); //Sania -> use print Log method
+			//System.out.println(check[i]); //-> use print Log method
 		}
 
 		int flag=0;
-		for (int i=0; i<5; i++) {
+		for (int i=0; i<10; i++) {
 			flag=0;
-			for (int j=0; j<3; j++){
+			for (int j=0; j<10; j++){
 					if (check[i].equals(a[i][j])) {
 							flag = 1;
-							System.out.println("Inside "); //Sania -> use print Log method
+							//System.out.println("Inside "); //-> use print Log method
 							break;
 					}
 			}
@@ -58,7 +58,7 @@
 
 <%
 	String inputString = request.getParameter("comment");
-	boolean isCorrectAnswer = false; //Sania -> since it is primtive. Note difference betwen boolean and Boolean (this is object)
+	boolean isCorrectAnswer = false; // Note difference betwen boolean and Boolean (this is object)
 
 	if (currentLevel == 1) {
 		isCorrectAnswer = stringMatcher(inputString);
@@ -75,10 +75,10 @@
 		result.put("redirectUrl", "/jsp/crypto.jsp");
 		info.put("level", currentLevel+1);
 	} else {
-		result.put("status", "-1"); //Sania -> Else is sufficient enough
+		result.put("status", "-1"); //
 	}
 
 	out.print(result);
-	// out.print(info); // Sania -> why did you need this
+	// out.print(info); //
 	out.flush();
 %>

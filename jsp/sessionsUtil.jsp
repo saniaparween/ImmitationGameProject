@@ -21,7 +21,7 @@
     int level = (Integer)info.get("level");
     long currentTime =  System.currentTimeMillis();
 
-    //
+   
     if (currentTime > endTime) {
         //send him to his result page
         response.sendRedirect("/jsp/results.jsp");

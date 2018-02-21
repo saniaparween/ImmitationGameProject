@@ -5,6 +5,7 @@ $(document).ready(function() {
     function isEmpty(str) {
         return (!str || 0 === str.length);
     }
+	
     $("#rc-form").submit(function(e) {
 
         e.preventDefault(); // avoid to execute the actual submit of the form.

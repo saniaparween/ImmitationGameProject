@@ -31,12 +31,23 @@
 <%-- Timer html code ends here --%>
 <h2 id='levelTitle'></h2>
 <div style="">
-    <span id='agent1' ></span>
-    <span id='agent2' ></span>
+    <span id='agent1' style="color:white;" ></span>
+    <span id='agent2' style="color:white;"></span>
 </div>
 
 <%-- Include the correct level file; level to be picked from the info object which is stored in session --%>
 <jsp:include page="${levelJspFileName}"></jsp:include>
+
+<div class="container-fluid" style="background-color:black; padding:10%;">
+	<div class="row">
+        <div class="col-xs-4"></div>
+            <div class="col-xs-4">    
+                <h1 id="heading2" style=" font-size:30px; text-align:center; color :#00c1ef;">Get a tour of the crypto Tools !</h1>
+                <a href="../jsp/cipherTools.jsp"><img class="img-responsive" src="../images/start2.jpg"></a>
+            </div>
+        <div class="col-xs-4"></div>
+    </div>
+</div>
 
 <script src="../js/crypto.js"></script>
 <%-- Include footer file --%>

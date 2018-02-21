@@ -1,4 +1,4 @@
-#intro{
+#welcomeintro{
     background: url('../images/bg3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,7 +39,7 @@
 
 }
 
-#parallax1{
+#welcomeparallax1{
 
      background: url('../images/rule.jpg');
     background-attachment: fixed;
@@ -70,7 +70,7 @@
 
 }
 
-#parallax3{
+#welcomeparallax3{
 
      background: url('../images/emobg.jpg');
     background-attachment: fixed;

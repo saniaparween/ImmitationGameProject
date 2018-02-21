@@ -4,5 +4,5 @@
 
 <%
 session.invalidate();
-response.sendRedirect("/welcome.html");
+response.sendRedirect("../jsp/welcome.jsp");
 %>
