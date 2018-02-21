@@ -25,8 +25,14 @@ function initializeClock(id, endtime) {
 
         daysSpan.innerHTML = t.days;
         hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        if (t.minutes >= 0) {
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        }
+        if (t.seconds >= 0) {
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        }
+        // minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        // secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
@@ -34,7 +40,7 @@ function initializeClock(id, endtime) {
     }
 
     updateClock();
-    var timeinterval = setInterval(updateClock, 5000);
+    var timeinterval = setInterval(updateClock, 1000);
 }
 
 $(document).ready(function() {
@@ -75,7 +81,7 @@ $(document).ready(function() {
     }
 
     updateStatus();
-    setInterval(updateStatus, 1000);
+    setInterval(updateStatus, 3000);
 
     $("#button").click(function(e) {
 

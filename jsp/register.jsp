@@ -38,7 +38,7 @@
 		info.put("agentName2", agentName2);
 		info.put("isRegistered", true);
 		info.put("startTime", currentTime);
-		info.put("endTime", currentTime + 30 * 60 * 1000); //SANIA - change here to change the time .. currently it is 30 minutes (set in milliseconds)
+		info.put("endTime", currentTime +  30 * 1000); //SANIA - change here to change the time .. currently it is 30 minutes (set in milliseconds)
 		info.put("level", 1);
 		session.setAttribute("info", info);
 
